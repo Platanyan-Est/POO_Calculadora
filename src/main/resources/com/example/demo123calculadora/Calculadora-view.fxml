@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo123calculadora.controller.CalculadoraController">
+   <children>
+      <HBox prefHeight="110.0" prefWidth="600.0">
+         <children>
+            <VBox prefHeight="110.0" prefWidth="298.0">
+               <children>
+                  <Label text="Numero 1" />
+                  <TextField fx:id="numeroUnoText"/>
+               </children>
+            </VBox>
+            <VBox prefHeight="110.0" prefWidth="303.0">
+               <children>
+                  <Label text="Numero 2" />
+                  <TextField fx:id="numeroDosText"/>
+               </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox>
+         <children>
+            <Button mnemonicParsing="false" text="Suma" onAction>
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" text="Resta">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" text="Multiplicar">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" text="Dividir">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+            <Button alignment="TOP_LEFT" contentDisplay="BOTTOM" mnemonicParsing="false" text="Modulo">
+               <HBox.margin>
+                  <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label text="Resultado" />
+            <Label text="ResultadoLabel" fx:id="Resultado">
+               <HBox.margin>
+                  <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</VBox>
